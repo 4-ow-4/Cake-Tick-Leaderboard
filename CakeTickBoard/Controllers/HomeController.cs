@@ -1,11 +1,12 @@
-﻿using CakeTickBoard.Models;
+﻿using CakeTickBoard.Controllers.Base;
+using CakeTickBoard.Models;
 using CakeTickBoard.ViewModels;
 using System.Linq;
 using System.Web.Mvc;
 
 namespace CakeTickBoard.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : ApplicationBaseController
     {
         private ApplicationDbContext _context;
 
@@ -20,7 +21,7 @@ namespace CakeTickBoard.Controllers
                     from user in _context.Users.ToList()
                     select new UserViewModel()
                     {
-                        UserName = user.Email,
+                        UserName = user.FullName,
                         CakeTickCount = user.CakeTickCount,
                         Rank = _context.Rankings.First(r => 
                                     user.CakeTickCount >= r.LowerBoundPoints && 

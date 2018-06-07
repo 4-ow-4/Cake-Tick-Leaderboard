@@ -196,18 +196,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Base\ApplicationBaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806071821490_InitialCreate.cs" />
-    <Compile Include="Migrations\201806071821490_InitialCreate.Designer.cs">
-      <DependentUpon>201806071821490_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806071912094_AddRankingsTableToDatabase.cs" />
-    <Compile Include="Migrations\201806071912094_AddRankingsTableToDatabase.Designer.cs">
-      <DependentUpon>201806071912094_AddRankingsTableToDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201806072038416_InitialCreate.cs" />
+    <Compile Include="Migrations\201806072038416_InitialCreate.Designer.cs">
+      <DependentUpon>201806072038416_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Seed\SeedRankings.cs" />
@@ -296,11 +293,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806071821490_InitialCreate.resx">
-      <DependentUpon>201806071821490_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806071912094_AddRankingsTableToDatabase.resx">
-      <DependentUpon>201806071912094_AddRankingsTableToDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806072038416_InitialCreate.resx">
+      <DependentUpon>201806072038416_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -8,6 +8,17 @@ namespace CakeTickBoard.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.CakeRankings",
+                c => new
+                    {
+                        Id = c.Guid(nullable: false, identity: true),
+                        RankName = c.String(),
+                        LowerBoundPoints = c.Int(nullable: false),
+                        UpperBoundPoints = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -35,6 +46,7 @@ namespace CakeTickBoard.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
+                        FullName = c.String(),
                         CakeTickCount = c.Int(nullable: false),
                         Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),
@@ -95,6 +107,7 @@ namespace CakeTickBoard.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.CakeRankings");
         }
     }
 }

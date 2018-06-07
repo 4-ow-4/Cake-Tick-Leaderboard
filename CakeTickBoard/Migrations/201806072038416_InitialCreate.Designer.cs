@@ -7,13 +7,13 @@ namespace CakeTickBoard.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddRankingsTableToDatabase : IMigrationMetadata
+    public sealed partial class InitialCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddRankingsTableToDatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201806071912094_AddRankingsTableToDatabase"; }
+            get { return "201806072038416_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
