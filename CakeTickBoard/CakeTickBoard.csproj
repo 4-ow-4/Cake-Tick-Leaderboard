@@ -207,6 +207,8 @@
       <DependentUpon>201806072038416_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\DatabaseInitializer.cs" />
+    <Compile Include="Migrations\DatabaseInitializerHelper.cs" />
     <Compile Include="Migrations\Seed\SeedRankings.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CakeRanking.cs" />
