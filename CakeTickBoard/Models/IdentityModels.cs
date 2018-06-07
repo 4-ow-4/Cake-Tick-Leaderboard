@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -16,6 +17,8 @@ namespace CakeTickBoard.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public int CakeTickCount { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -29,5 +32,17 @@ namespace CakeTickBoard.Models
         {
             return new ApplicationDbContext();
         }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<CakeRanking>().HasKey(x => x.Id);
+
+            modelBuilder.Entity<CakeRanking>().Property(x => x.Id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+        }
+
+        public DbSet<CakeRanking> Rankings { get; set; }
     }
 }
