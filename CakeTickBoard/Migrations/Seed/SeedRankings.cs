@@ -38,7 +38,7 @@ namespace CakeTickBoard.Migrations.Seed
 
                 context.SaveChanges();
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }

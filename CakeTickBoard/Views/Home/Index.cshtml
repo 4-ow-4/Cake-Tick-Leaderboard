@@ -8,17 +8,23 @@
 </div>
 
 <table style="width:100%" border="1">
-    <tr>
-        <th>Username</th>
-        <th>Points</th>
-        <th>Rank</th>
-    </tr>
+  <tr>
+    <th>Username</th>
+    <th>Points</th>
+    <th>Rank</th>
+    <th>Modify</th>
+  </tr>
     @foreach (var user in leaderboard)
     {
         <tr>
             <td>@user.UserName</td>
             <td>@user.CakeTickCount</td>
             <td>@user.Rank</td>
+            @if(user.UserName == (string)(ViewData["FullName"]))
+            {
+              <td>@Html.ActionLink("Add Tick", "AddTick", "Home") - 
+                  @Html.ActionLink("Remove Tick", "RemoveTick", "Home")</td>
+            }
         </tr>
     }
 </table>
