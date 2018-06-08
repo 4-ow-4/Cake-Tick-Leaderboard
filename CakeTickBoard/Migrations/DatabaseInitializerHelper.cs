@@ -24,6 +24,7 @@ namespace CakeTickBoard.Migrations
             if (latestMigrationAppliedToDatabase.Equals(latestMigrationDefinedInCode))
                 return;
 
+
             dbMigrator.Configuration.AutomaticMigrationDataLossAllowed = true;
             dbMigrator.Update(latestMigrationDefinedInCode);
         }
