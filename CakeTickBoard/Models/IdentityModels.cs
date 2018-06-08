@@ -20,6 +20,7 @@ namespace CakeTickBoard.Models
             return userIdentity;
         }
 
+        public int UserId { get; set; }
         public string FullName { get; set; }
         public int CakeTickCount { get; set; }
     }
@@ -43,6 +44,9 @@ namespace CakeTickBoard.Models
             modelBuilder.Entity<CakeRanking>().HasKey(x => x.Id);
 
             modelBuilder.Entity<CakeRanking>().Property(x => x.Id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+
+            modelBuilder.Entity<ApplicationUser>().Property(x => x.UserId)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
         }
 

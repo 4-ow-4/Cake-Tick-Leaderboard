@@ -30,6 +30,7 @@ namespace CakeTickBoard.Controllers
                     from user in _context.Users.ToList()
                     select new UserViewModel()
                     {
+                        UserId = user.UserId,
                         UserName = user.FullName,
                         CakeTickCount = user.CakeTickCount,
                         Rank = _context.Rankings.First(r => 
