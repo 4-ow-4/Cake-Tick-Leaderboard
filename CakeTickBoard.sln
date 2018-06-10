@@ -9,13 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Application.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Respository", "CakeTickBoard.Respository\CakeTickBoard.Respository.csproj", "{E11894A2-95AC-4657-9DF1-D383B9B4E338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Service", "CakeTickBoard.Service\CakeTickBoard.Service.csproj", "{A531D6E7-E8D6-4716-9620-E2E4F8027E34}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Container", "CakeTickBoard.Container\CakeTickBoard.Container.csproj", "{6C3D06E7-14C0-452A-A892-758F20934243}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Web.Feed.Tests", "CakeTickBoard.Web.Feed.Tests\CakeTickBoard.Web.Feed.Tests.csproj", "{5E853BFA-D820-4FF4-9ED8-673352AFEE77}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Application.Logic.Tests", "CakeTickBoard.Application.Logic.Tests\CakeTickBoard.Application.Logic.Tests.csproj", "{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.WebJob", "CakeTickBoard.WebJob\CakeTickBoard.WebJob.csproj", "{69994D6C-8249-4FDE-8997-71CAB6508D9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		{E11894A2-95AC-4657-9DF1-D383B9B4E338}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E11894A2-95AC-4657-9DF1-D383B9B4E338}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E11894A2-95AC-4657-9DF1-D383B9B4E338}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A531D6E7-E8D6-4716-9620-E2E4F8027E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A531D6E7-E8D6-4716-9620-E2E4F8027E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A531D6E7-E8D6-4716-9620-E2E4F8027E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A531D6E7-E8D6-4716-9620-E2E4F8027E34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6C3D06E7-14C0-452A-A892-758F20934243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6C3D06E7-14C0-452A-A892-758F20934243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C3D06E7-14C0-452A-A892-758F20934243}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69994D6C-8249-4FDE-8997-71CAB6508D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69994D6C-8249-4FDE-8997-71CAB6508D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69994D6C-8249-4FDE-8997-71CAB6508D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69994D6C-8249-4FDE-8997-71CAB6508D9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
