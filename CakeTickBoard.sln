@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Service", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Container", "CakeTickBoard.Container\CakeTickBoard.Container.csproj", "{6C3D06E7-14C0-452A-A892-758F20934243}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Web.Feed.Tests", "CakeTickBoard.Web.Feed.Tests\CakeTickBoard.Web.Feed.Tests.csproj", "{5E853BFA-D820-4FF4-9ED8-673352AFEE77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeTickBoard.Application.Logic.Tests", "CakeTickBoard.Application.Logic.Tests\CakeTickBoard.Application.Logic.Tests.csproj", "{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{6C3D06E7-14C0-452A-A892-758F20934243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C3D06E7-14C0-452A-A892-758F20934243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C3D06E7-14C0-452A-A892-758F20934243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E853BFA-D820-4FF4-9ED8-673352AFEE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E853BFA-D820-4FF4-9ED8-673352AFEE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E853BFA-D820-4FF4-9ED8-673352AFEE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E853BFA-D820-4FF4-9ED8-673352AFEE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4053B1E0-8637-4658-9802-DBC3F2EAFC3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

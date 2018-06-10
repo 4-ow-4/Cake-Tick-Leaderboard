@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CakeTickBoard.Application.Logic\CakeTickBoard.Application.Logic.csproj" />
+    <ProjectReference Include="..\CakeTickBoard.Web.Feed\CakeTickBoard.Web.Feed.csproj" />
+  </ItemGroup>
+
+</Project>
