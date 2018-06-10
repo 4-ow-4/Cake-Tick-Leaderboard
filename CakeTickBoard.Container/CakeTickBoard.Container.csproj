@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CakeTickBoard.Application.Logic\CakeTickBoard.Application.Logic.csproj" />
+    <ProjectReference Include="..\CakeTickBoard.Respository\CakeTickBoard.Respository.csproj" />
+  </ItemGroup>
+
+</Project>
